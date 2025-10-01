@@ -68,6 +68,11 @@ int main(){
         cout << "Хотите повторить выполнение программы?(Y/N)" << endl;
         cout << ":> ";
         cin >> repeat;
+        if(repeat == 'N' || repeat == 'n'){
+            cout << "+------------------------+" << endl;
+            cout << "|      ДО СВИДАНИЯ!      |" << endl;
+            cout << "+------------------------+" << endl;
+        }
     }while(repeat == 'Y' || repeat == 'y');
 
     return 0;
